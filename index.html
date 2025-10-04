@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrify | Synchronized Lyrics for Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="custom-cursor"></div>
+    
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-dot"></span>Lyrify
+            </a>
+            <nav class="nav-links">
+                <a href="#features-details">Details</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#customization">Customization</a>
+            </nav>
+            <button id="connectSpotifyBtn" class="cta-button">
+                Connect with Spotify
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="main-app-icon">
+                <span class="logo-dot large-dot"></span>
+                <span class="logo-dot large-dot"></span>
+                <span class="logo-dot large-dot"></span>
+                <span class="logo-dot large-dot"></span>
+            </div>
+            
+            <h1 class="hero-title">Hear, See, and <span style="text-decoration: underline;color:#1ed760;text-transform: uppercase;">Understand</span> Every Word.</h1>
+            <p class="hero-subtitle">Lyrify synchronizes Spotify playback with customizable, real-time lyrics on all your devices.</p>
+
+            <button id="cardConnectSpotifyBtn" class="cta-button-lg hero-cta-shadow">
+                Connect with Spotify
+            </button>
+            <p class="permission-note hero-permission-note">We only request permission to read your currently playing song.</p>
+        </div>
+    </section>
+
+    <section id="features-details" class="details-section">
+        <div class="container">
+            <h2 class="details-headline">Solve Your Music's Biggest Challenge: Silence</h2>
+            
+            <div class="challenge-grid">
+                <div class="challenge-item">
+                    <span class="grid-icon">🎵</span>
+                    <p>Keep your flow smooth, as Lyrify handles synchronization and display automatically.</p>
+                </div>
+                <div class="challenge-item">
+                    <span class="grid-icon">👀</span>
+                    <p>Stop guessing the words. See every lyric clearly and accurately, right on your screen.</p>
+                </div>
+                <div class="challenge-item">
+                    <span class="grid-icon">🎨</span>
+                    <p>Ditch boring interfaces. Customize the display to match your device or mood perfectly.</p>
+                </div>
+            </div>
+
+            <div class="main-feature-mockup chrome-card">
+                <div class="mockup-header">Lyrify Dashboard - Live View</div>
+                <div class="mockup-screen">
+                    <h3 class="mockup-title">Good Morning, Music Lover</h3>
+                    <div class="mockup-details">
+                        <div class="details-block">
+                            <h4>Current Track:</h4>
+                            <p>Blinding Lights - The Weeknd</p>
+                        </div>
+                        <div class="details-block">
+                            <h4>Live Lyrics:</h4>
+                            <p class="live-lyric-text">I look around and</p>
+                            <p class="live-lyric-text active">**The walls are closing in**</p>
+                            <p class="live-lyric-text">I've been on my own for way too long</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="details-headline secondary-headline">Keep Everything in Sync and Stunning</h2>
+
+            <div class="secondary-feature-grid">
+                <div class="secondary-feature-item chrome-card">
+                    <div class="feature-content">
+                        <span class="secondary-icon">≫</span>
+                        <h3>Advanced Sync & Track Info</h3>
+                        <p>A hawk-eye view of song metadata, album art, and precise line-by-line timing.</p>
+                    </div>
+                    <div class="feature-visual chrome-card">
+                        <p class="visual-text">Sync Chart Visual</p>
+                    </div>
+                </div>
+
+                <div class="secondary-feature-item chrome-card">
+                    <div class="feature-content">
+                        <span class="secondary-icon">💻</span>
+                        <h3>Multi-Device Workspaces</h3>
+                        <p>Customize your lyric view differently for your phone, desktop, or tablet.</p>
+                    </div>
+                    <div class="feature-visual chrome-card">
+                        <p class="visual-text">Customizer Widget</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="core-benefits-section">
+        <div class="container">
+            <h2>Core Lyrify Benefits</h2>
+            <div class="feature-grid">
+                <div class="feature-item chrome-card">
+                    <span class="feature-icon">🎧</span>
+                    <h3>Real-Time Sync</h3>
+                    <p>Lyrics appear exactly when the artist sings them. Never miss a word or a beat again.</p>
+                </div>
+                <div class="feature-item chrome-card">
+                    <span class="feature-icon">✨</span>
+                    <h3>Deep Customization</h3>
+                    <p>Choose fonts, colors, and themes. Make the lyrics match your phone's aesthetic or your mood.</p>
+                </div>
+                <div class="feature-item chrome-card">
+                    <span class="feature-icon">🔗</span>
+                    <h3>Seamless Integration</h3>
+                    <p>Works directly with your existing Spotify account, playlists, and playback controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customization" class="customization-section">
+        <div class="container">
+            <h2>Lyric Display, Your Way.</h2>
+            <div class="showcase-grid">
+                <div class="showcase-card dark chrome-card">
+                    <p class="theme-label">Centered Scrolled</p>
+                    <div id="centered-Scrolled-Animation">                    
+                        <p class="sample-lyric">Line 1</p>
+                        <p class="sample-lyric">Line 2</p>
+                    </div>
+                </div>
+                <div class="showcase-card vibrant chrome-card">
+                    <p class="theme-label">Vibrant Pop</p>
+                    <p class="sample-lyric">We are the architects of our own destiny</p>
+                </div>
+                <div class="showcase-card minimalist chrome-card">
+                    <p class="theme-label">Minimalist Clarity</p>
+                    <p class="sample-lyric">Just a moment of silence.</p>
+                </div>
+            </div>
+            <button class="secondary-cta">Explore All Themes</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <div class="col">
+                    <h4>Lyrify</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <p class="copyright">© 2025 Lyrify. All rights reserved. Powered by Spotify.</p>
+        </div>
+    </footer>
+</body>
+</html>
