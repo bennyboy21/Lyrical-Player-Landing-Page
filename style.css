@@ -554,6 +554,7 @@ a:hover { color: var(--color-primary); }
     height: 20px;
     /* background-color: var(--color-primary);  */
     /* Use a solid color for a cleaner blend */
+    background-color:#1ed760;
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -589,4 +590,150 @@ a, button, .logo {
     position: relative;
     z-index: 1000;
     isolation: isolate; 
+}
+
+/* Main Feature Mockup */
+.main-feature-mockup {
+    /* ... existing styles ... */
+    /* Increased height for a more impactful full-screen view */
+    max-width: 1200px;
+}
+
+.mockup-screen {
+    /* Reset screen background to deep black for the full lyric app look */
+    background-color: #000000; 
+    padding: 50px;
+    min-height: 550px; /* Increased height */
+    /* Centering content for the focused lyric display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Important for clean edges */
+}
+
+/* Remove old mockup details */
+.mockup-title, .mockup-details {
+    display: none;
+}
+
+/* --- New Full Lyric Display Styles --- */
+.main-lyric-display {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.focused-lyric-text {
+    font-size: 30px; /* Large font size for impact */
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-text-light);
+    margin: 10px 0;
+    opacity:.15;
+    transition: all 0.2s ease;
+    /* Ensure text is on top of the black background */
+    position: relative; 
+}
+
+.focused-lyric-text.active {
+    font-size: 40px; /* Make the active line stand out more */
+    opacity:1;
+    color: var(--color-text-white);
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle white glow */
+}
+
+/* --- New Now Playing Widget Styles (bottom right corner) --- */
+.now-playing-widget {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: rgba(30, 30, 30, 0.9); /* Darker, slightly translucent card */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    z-index: 10;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(0); /* Override the chrome-card hover effect on this element */
+}
+
+.now-playing-widget:hover {
+    transform: translateY(0); /* Keep it static */
+}
+
+.album-art-mockup {
+    width: 60px;
+    height: 60px;
+    background-color: #333; /* Placeholder color */
+    border-radius: var(--border-radius-sm);
+    margin-right: 15px;
+}
+
+.track-info-mockup {
+    flex-grow: 1;
+    text-align: left;
+    gap:1px;
+}
+
+.np-label {
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    /* margin-bottom: 2px; */
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.np-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-white);
+    /* margin-bottom: 2px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.np-artist {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    /* margin-bottom: 8px; */
+}
+
+.playback-bar-mockup {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+}
+
+.bar-fill {
+    height: 4px;
+    background: linear-gradient(to right, var(--color-primary) 30%, var(--color-text-light) 30%);
+    background-color: #333;
+    flex-grow: 1;
+    margin: 0 8px;
+    border-radius: 2px;
+}
+
+/* Media Query Adjustment for the new mockup */
+@media (max-width: 600px) {
+    /* ... existing media query styles ... */
+
+    .focused-lyric-text {
+        font-size: 1.5rem;
+    }
+
+    .focused-lyric-text.active {
+        font-size: 1.8rem;
+    }
+
+    .now-playing-widget {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
 }

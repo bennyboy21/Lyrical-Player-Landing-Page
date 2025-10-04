@@ -53,33 +53,45 @@
             
             <div class="challenge-grid">
                 <div class="challenge-item">
-                    <span class="grid-icon">🎵</span>
+                    <span class="grid-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    </span>
                     <p>Keep your flow smooth, as Lyrify handles synchronization and display automatically.</p>
                 </div>
                 <div class="challenge-item">
-                    <span class="grid-icon">👀</span>
+                    <span class="grid-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </span>
                     <p>Stop guessing the words. See every lyric clearly and accurately, right on your screen.</p>
                 </div>
                 <div class="challenge-item">
-                    <span class="grid-icon">🎨</span>
+                    <span class="grid-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M15 9.5a2.5 2.5 0 0 1-5 0"/><path d="M12 14v4"/></svg>
+                    </span>
                     <p>Ditch boring interfaces. Customize the display to match your device or mood perfectly.</p>
                 </div>
             </div>
 
             <div class="main-feature-mockup chrome-card">
                 <div class="mockup-header">Lyrify Dashboard - Live View</div>
-                <div class="mockup-screen">
-                    <h3 class="mockup-title">Good Morning, Music Lover</h3>
-                    <div class="mockup-details">
-                        <div class="details-block">
-                            <h4>Current Track:</h4>
-                            <p>Blinding Lights - The Weeknd</p>
-                        </div>
-                        <div class="details-block">
-                            <h4>Live Lyrics:</h4>
-                            <p class="live-lyric-text">I look around and</p>
-                            <p class="live-lyric-text active">**The walls are closing in**</p>
-                            <p class="live-lyric-text">I've been on my own for way too long</p>
+                <div class="mockup-screen full-lyric-view"> 
+                    <div class="main-lyric-display">
+                        <p class="focused-lyric-text">I look around and</p> 
+                        <p class="focused-lyric-text active">I said, ooh, I'm blinded by the lights</p>
+                        <p class="focused-lyric-text">I've been on my own for way too long</p>
+                    </div>
+
+                    <div class="now-playing-widget chrome-card">
+                        <img src="blinding_lights_album_art.png" alt="Album Art" class="album-art-mockup">
+                        <div class="track-info-mockup">
+                            <p class="np-label">Now Playing</p>
+                            <p class="np-title">Blinding Lights</p>
+                            <p class="np-artist">The Weeknd</p>
+                            <div class="playback-bar-mockup">
+                                <span class="np-time">1:03</span>
+                                <div class="bar-fill"></div>
+                                <span class="np-time">3:20</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,7 +102,9 @@
             <div class="secondary-feature-grid">
                 <div class="secondary-feature-item chrome-card">
                     <div class="feature-content">
-                        <span class="secondary-icon">≫</span>
+                        <span class="secondary-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 17l5-5l-5-5M6 17l5-5l-5-5"/></svg>
+                        </span>
                         <h3>Advanced Sync & Track Info</h3>
                         <p>A hawk-eye view of song metadata, album art, and precise line-by-line timing.</p>
                     </div>
@@ -101,9 +115,11 @@
 
                 <div class="secondary-feature-item chrome-card">
                     <div class="feature-content">
-                        <span class="secondary-icon">💻</span>
-                        <h3>Multi-Device Workspaces</h3>
-                        <p>Customize your lyric view differently for your phone, desktop, or tablet.</p>
+                        <span class="secondary-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="1" y1="18" x2="23" y2="18"/><line x1="6" y1="21" x2="18" y2="21"/></svg>
+                        </span>
+                        <h3>Customizable Your Lyrics</h3>
+                        <p>Customize how you want the lyrics to all your favourite songs.</p>
                     </div>
                     <div class="feature-visual chrome-card">
                         <p class="visual-text">Customizer Widget</p>
@@ -118,19 +134,25 @@
             <h2>Core Lyrify Benefits</h2>
             <div class="feature-grid">
                 <div class="feature-item chrome-card">
-                    <span class="feature-icon">🎧</span>
-                    <h3>Real-Time Sync</h3>
-                    <p>Lyrics appear exactly when the artist sings them. Never miss a word or a beat again.</p>
+                    <span class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                    </span>
+                    <h3 style="text-align: left;">Real-Time Sync</h3>
+                    <p style="text-align: left;">Lyrics appear exactly when the artist sings them. Never miss a word or a beat again.</p>
                 </div>
                 <div class="feature-item chrome-card">
-                    <span class="feature-icon">✨</span>
-                    <h3>Deep Customization</h3>
-                    <p>Choose fonts, colors, and themes. Make the lyrics match your phone's aesthetic or your mood.</p>
+                    <span class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    </span>
+                    <h3 style="text-align: left;">Deep Customization</h3>
+                    <p style="text-align: left;">Choose fonts, colors, and themes. Make the lyrics match your phone's aesthetic or your mood.</p>
                 </div>
                 <div class="feature-item chrome-card">
-                    <span class="feature-icon">🔗</span>
-                    <h3>Seamless Integration</h3>
-                    <p>Works directly with your existing Spotify account, playlists, and playback controls.</p>
+                    <span class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </span>
+                    <h3 style="text-align: left;">Seamless Integration</h3>
+                    <p style="text-align: left;">Works directly with your existing Spotify account, playlists, and playback controls.</p>
                 </div>
             </div>
         </div>
@@ -174,7 +196,6 @@
                     <a href="#">Terms of Service</a>
                 </div>
             </div>
-            <p class="copyright">© 2025 Lyrify. All rights reserved. Powered by Spotify.</p>
         </div>
     </footer>
 </body>
